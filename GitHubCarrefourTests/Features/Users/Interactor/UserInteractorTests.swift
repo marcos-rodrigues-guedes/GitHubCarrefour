@@ -53,20 +53,20 @@ class UsersInteractorTests: XCTestCase {
     }
 
     func testGetGitHubUsers_Failure() {
-        // Crie um Publisher de exemplo com um erro de rede
+        // Cria um Publisher de exemplo com um erro de rede
         let error = NetworkError.badRequest(code: 0, error: "Erro de Conexão")
         let publisher = Fail<[User], NetworkError>(error: error)
             .eraseToAnyPublisher()
 
-        // Defina o comportamento esperado para o método getGitHubUsers() no mock
+        // Define o comportamento esperado para o método getGitHubUsers() no mock
         remoteDataSourceSpy.getGitHubUsersClosure = {
             return publisher
         }
 
-        // Chame o método sendo testado
+        // Chama o método sendo testado
         let result = sut.getGitHubUsers()
 
-        // Verifique se o resultado é igual ao Publisher esperado
+        // Verifica se o resultado é igual ao Publisher esperado
         let expectation = XCTestExpectation(description: "Get GitHub Users")
         _ = result.sink { completion in
             switch completion {
@@ -85,21 +85,21 @@ class UsersInteractorTests: XCTestCase {
     }
 
     func testGetGitHubUsers_EmptyResult() {
-        // Crie um Publisher de exemplo com uma lista vazia de usuários
+        // Cria um Publisher de exemplo com uma lista vazia de usuários
         let users: [User] = []
         let publisher = Just(users)
             .setFailureType(to: NetworkError.self)
             .eraseToAnyPublisher()
 
-        // Defina o comportamento esperado para o método getGitHubUsers() no spy
+        // Define o comportamento esperado para o método getGitHubUsers() no spy
         remoteDataSourceSpy.getGitHubUsersClosure = {
             return publisher
         }
 
-        // Chame o método sendo testado
+        // Chama o método sendo testado
         let result = sut.getGitHubUsers()
 
-        // Verifique se o resultado é igual ao Publisher esperado
+        // Verifica se o resultado é igual ao Publisher esperado
         let expectation = XCTestExpectation(description: "Get GitHub Users")
         _ = result.sink { completion in
             switch completion {

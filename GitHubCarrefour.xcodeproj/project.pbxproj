@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B680DD0D2A1D441A004E33E2 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680DD0C2A1D441A004E33E2 /* XCTestCase+Extension.swift */; };
 		B680DD122A1D4DCA004E33E2 /* UsersViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680DD112A1D4DCA004E33E2 /* UsersViewUITests.swift */; };
 		B680DD142A1D50D3004E33E2 /* UsersViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680DD132A1D50D3004E33E2 /* UsersViewSnapshotTests.swift */; };
 		B680DD162A1D518C004E33E2 /* UsersViewModelSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680DD152A1D518C004E33E2 /* UsersViewModelSpy.swift */; };
@@ -33,7 +32,6 @@
 		B6D9D6F42A1CFAF500F0B2EA /* UserInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D6F32A1CFAF500F0B2EA /* UserInteractorTests.swift */; };
 		B6D9D6F82A1D01C300F0B2EA /* UsersRemoteDataSourceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D6F72A1D01C300F0B2EA /* UsersRemoteDataSourceSpy.swift */; };
 		B6D9D6FB2A1D05D900F0B2EA /* UserListFactoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D6FA2A1D05D900F0B2EA /* UserListFactoryStub.swift */; };
-		B6D9D6FE2A1D0CF100F0B2EA /* UsersRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D6FD2A1D0CF100F0B2EA /* UsersRemoteDataSourceTests.swift */; };
 		B6D9D7002A1D0D1800F0B2EA /* APISessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9D6FF2A1D0D1800F0B2EA /* APISessionSpy.swift */; };
 		B6F6C4BB2A1BA80E007A506A /* GitHubCarrefourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6C4BA2A1BA80E007A506A /* GitHubCarrefourApp.swift */; };
 		B6F6C4BF2A1BA812007A506A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F6C4BE2A1BA812007A506A /* Assets.xcassets */; };
@@ -102,7 +100,6 @@
 
 /* Begin PBXFileReference section */
 		B680DD0A2A1D3DAC004E33E2 /* GitHubCarrefour.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitHubCarrefour.xctestplan; sourceTree = "<group>"; };
-		B680DD0C2A1D441A004E33E2 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
 		B680DD112A1D4DCA004E33E2 /* UsersViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewUITests.swift; sourceTree = "<group>"; };
 		B680DD132A1D50D3004E33E2 /* UsersViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewSnapshotTests.swift; sourceTree = "<group>"; };
 		B680DD152A1D518C004E33E2 /* UsersViewModelSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelSpy.swift; sourceTree = "<group>"; };
@@ -128,7 +125,6 @@
 		B6D9D6F32A1CFAF500F0B2EA /* UserInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractorTests.swift; sourceTree = "<group>"; };
 		B6D9D6F72A1D01C300F0B2EA /* UsersRemoteDataSourceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRemoteDataSourceSpy.swift; sourceTree = "<group>"; };
 		B6D9D6FA2A1D05D900F0B2EA /* UserListFactoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListFactoryStub.swift; sourceTree = "<group>"; };
-		B6D9D6FD2A1D0CF100F0B2EA /* UsersRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRemoteDataSourceTests.swift; sourceTree = "<group>"; };
 		B6D9D6FF2A1D0D1800F0B2EA /* APISessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISessionSpy.swift; sourceTree = "<group>"; };
 		B6F6C4B72A1BA80E007A506A /* GitHubCarrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubCarrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F6C4BA2A1BA80E007A506A /* GitHubCarrefourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubCarrefourApp.swift; sourceTree = "<group>"; };
@@ -209,7 +205,6 @@
 		B680DD0B2A1D43E7004E33E2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B680DD0C2A1D441A004E33E2 /* XCTestCase+Extension.swift */,
 				B680DD172A1D60C5004E33E2 /* SwiftUI+Extension.swift */,
 			);
 			path = Extension;
@@ -364,7 +359,6 @@
 			isa = PBXGroup;
 			children = (
 				B6D9D6F32A1CFAF500F0B2EA /* UserInteractorTests.swift */,
-				B6D9D6FD2A1D0CF100F0B2EA /* UsersRemoteDataSourceTests.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -951,12 +945,10 @@
 				B680DD332A1E88ED004E33E2 /* UserDetailsInteractorTests.swift in Sources */,
 				B6D9D6FB2A1D05D900F0B2EA /* UserListFactoryStub.swift in Sources */,
 				B680DD352A1E8D10004E33E2 /* UserDetailsFactoryStub.swift in Sources */,
-				B680DD0D2A1D441A004E33E2 /* XCTestCase+Extension.swift in Sources */,
 				B6D9D7002A1D0D1800F0B2EA /* APISessionSpy.swift in Sources */,
 				B6D5C1D02A1D2A60004EA124 /* UsersInteractorSpy.swift in Sources */,
 				B6D9D6F82A1D01C300F0B2EA /* UsersRemoteDataSourceSpy.swift in Sources */,
 				B680DD182A1D60C5004E33E2 /* SwiftUI+Extension.swift in Sources */,
-				B6D9D6FE2A1D0CF100F0B2EA /* UsersRemoteDataSourceTests.swift in Sources */,
 				B6D9D6F42A1CFAF500F0B2EA /* UserInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

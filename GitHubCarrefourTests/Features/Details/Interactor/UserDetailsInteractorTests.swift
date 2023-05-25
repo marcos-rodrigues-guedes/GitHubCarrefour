@@ -56,20 +56,20 @@ class UserDetailsInteractorTests: XCTestCase {
     }
 
     func testGetUsersDetails_Failure() {
-        // Crie um Publisher de exemplo com um erro de rede
+        // Cria um Publisher de exemplo com um erro de rede
         let error = NetworkError.badRequest(code: 0, error: "Erro de Conexão")
         let publisher = Fail<UserDetails, NetworkError>(error: error)
             .eraseToAnyPublisher()
 
-        // Defina o comportamento esperado para o método testGetUsersDetails() no mock
+        // Define o comportamento esperado para o método testGetUsersDetails() no mock
         remoteDataSourceSpy.getUsersDetailsClosure = {
             return publisher
         }
 
-        // Chame o método sendo testado
+        // Chama o método sendo testado
         let result = sut.getUsersDetails(with: "user")
 
-        // Verifique se o resultado é igual ao Publisher esperado
+        // Verifica se o resultado é igual ao Publisher esperado
         let expectation = XCTestExpectation(description: "Get GitHub Users")
         _ = result.sink { completion in
             switch completion {
