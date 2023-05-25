@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "36419634-A667-495A-B305-05A57193208A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GitHubCarrefour.xcodeproj",
+        "identifier" : "B6F6C4C62A1BA813007A506A",
+        "name" : "GitHubCarrefourTests"
+      }
+    },
+    {
+      "skippedTests" : [
+        "UsersViewUITests\/testUsersView_DisplayEmptyListState()",
+        "UsersViewUITests\/testUsersView_DisplayErrorState()",
+        "UsersViewUITests\/testUsersView_DisplayLoadingState()"
+      ],
+      "target" : {
+        "containerPath" : "container:GitHubCarrefour.xcodeproj",
+        "identifier" : "B6F6C4D02A1BA813007A506A",
+        "name" : "GitHubCarrefourUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
